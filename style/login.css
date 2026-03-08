@@ -1,0 +1,122 @@
+/* --- Luxury Login Page Styles --- */
+
+.luxury-login-body {
+    background-color: #0f0f0f;
+    background-image: radial-gradient(circle at 50% 0%, #2a2a2a 0%, #0f0f0f 70%);
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+.login-card {
+    background: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid #333;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.luxury-brand {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.luxury-subtitle {
+    color: #888;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.luxury-label {
+    color: #ccc;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.luxury-input-group .input-group-text {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    border-right: none;
+    color: #FF6B81; /* Brand Color */
+}
+
+.luxury-input {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    border-left: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.luxury-input:focus {
+    background-color: #1a1a1a;
+    border-color: #FF6B81;
+    color: #fff;
+    box-shadow: none;
+}
+
+.luxury-input::placeholder {
+    color: #555;
+}
+
+.luxury-input-group:focus-within .input-group-text {
+    border-color: #FF6B81;
+}
+
+.luxury-check:checked {
+    background-color: #FF6B81;
+    border-color: #FF6B81;
+}
+
+.luxury-link, .luxury-link-bold {
+    color: #FF6B81;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.luxury-link-bold {
+    font-weight: 600;
+}
+
+.luxury-link:hover, .luxury-link-bold:hover {
+    color: #fff;
+}
+
+.btn-luxury {
+    background: linear-gradient(45deg, #FF6B81, #ff4757);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-luxury:hover {
+    background: linear-gradient(45deg, #ff8596, #FF6B81);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 129, 0.3);
+}
+
+.luxury-text-muted {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.luxury-back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #666;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+
+.luxury-back-link:hover {
+    color: #fff;
+}
