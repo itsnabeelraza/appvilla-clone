@@ -12,16 +12,20 @@
 
 </head>
 
-<body>
+<body id="top">
 
-  <section id="hero" class="p-3">
+  <section id="hero" class="p-3 ">
+    <!-- The navbar has been updated with Bootstrap's responsive classes -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <div class="logo">
-          <a class="navbar-brand" href="#">
-            <img src="./images/white-logo.svg" alt="Appvilla" width="160">
-          </a>
-        </div>
+        <a class="navbar-brand" href="#">
+          <img src="./images/white-logo.svg" alt="Appvilla" width="160">
+        </a>
+        <!-- This button will toggle the navbar on mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto">
             <a class="nav-link text-white fw-medium" href="#">Home</a>
@@ -32,20 +36,22 @@
             <a class="nav-link text-white fw-medium" href="#">Blog</a>
             <a class="nav-link text-white fw-medium" href="#">Contact</a>
           </div>
-        </div>
-        <div class="nav-btn">
-          <a class="get-started btn btn-outline-light px-4 py-2 border-2 fw-medium">Get It Now</a>
+          <div class="nav-btn d-flex align-items-center gap-2">
+            <a href="login.html" class="login-btn btn btn-outline-light">Login</a>
+            <a href="login.html" class="signup-btn btn btn-dark">Sign Up</a>
+          </div>
         </div>
       </div>
     </nav>
 
-    <div class="container hero-area">
-      <div class="row">
-        <div class="col-lg-5 col-md-12 col-12 d-flex justify-content-start align-items-center pe-4">
+    <div class="container hero-area ">
+      <!-- The grid system is used here to make the layout responsive -->
+      <div class="row gy-5">
+        <div class="col-lg-5 col-md-12 col-12 d-flex justify-content-center align-items-center">
           <div class="hero-content d-flex flex-column justify-content-center align-items-start gap-4">
             <h1 class="hero-heading text-capitalize">A powerful app for <br> your business.</h1>
             <p>From open source to pro services, Piqes helps you to build, deploy, test, and monitor apps.</p>
-            <div class="ctr d-flex gap-3 justify-content-start align-items-center">
+            <div class="ctr d-flex flex-wrap gap-3 justify-content-start align-items-center">
               <button type="button" class="btn btn-outline-primary">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -64,6 +70,7 @@
         </div>
         <div class="col-lg-7 col-md-12 col-12 d-flex justify-content-center align-items-center">
           <div class="hero-img">
+            <!-- img-fluid class makes the image responsive -->
             <img class="img-fluid" src="./images/phone.png" alt="">
           </div>
         </div>
@@ -73,144 +80,118 @@
 
   <section id="features">
     <div class="container features-area">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-12 features-content">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-12 col-12 text-center">
           <h5 class="text-uppercase">Features</h5>
           <h2>Your Experience Gets Better And Better Over Time.</h2>
-          <p class="fs-6 text-secondary">There are many variations of passages of Lorem Ipsum available but the majority
+          <p class="fs-6 text-secondary px-3">There are many variations of passages of Lorem Ipsum available but the majority
             have suffered alteration in some form.</p>
-        </div>
-
-        <div class="row justify-content-between g-4">
-          <!-- First Card Start -->
-          <div class="col-lg-4">
-            <div class="feature-card">
-              <div class="card-icon">
-                <i class="ri-upload-cloud-2-line"></i>
-              </div>
-              <h3>Push to Deploy</h3>
-              <p class="text-secondary">It is a long established fact that a reader will be distracted by the readable
-                content of a page at its layout.</p>
-            </div>
-          </div>
-          <!-- First Card End -->
-
-          <!-- Second Card Start -->
-          <div class="col-lg-4">
-            <div class="feature-card">
-              <div class="card-icon">
-                <i class="ri-upload-cloud-2-line"></i>
-              </div>
-              <h3>Push to Deploy</h3>
-              <p class="text-secondary">It is a long established fact that a reader will be distracted by the readable
-                content of a page at its layout.
-              </p>
-            </div>
-          </div>
-          <!-- Second Card End -->
-
-          <!-- Third Card Start -->
-          <div class="col-lg-4">
-            <div class="feature-card">
-              <div class="card-icon">
-                <i class="ri-upload-cloud-2-line"></i>
-              </div>
-              <h3>Push to Deploy</h3>
-              <p class="text-secondary">It is a long established fact that a reader will be distracted by the readable
-                content of a page at its layout.</p>
-            </div>
-          </div>
-          <!-- Third Card End -->
-
-          <!-- Fourth Card Start -->
-          <div class="col-lg-4">
-            <div class="feature-card">
-              <div class="card-icon">
-                <i class="ri-upload-cloud-2-line"></i>
-              </div>
-              <h3>Push to Deploy</h3>
-              <p class="text-secondary">It is a long established fact that a reader will be distracted by the readable
-                content of a page at its layout.</p>
-            </div>
-          </div>
-          <!-- Fourth Card End -->
-
-          <!-- Fifth Card Start -->
-          <div class="col-lg-4">
-            <div class="feature-card">
-              <div class="card-icon">
-                <i class="ri-upload-cloud-2-line"></i>
-              </div>
-              <h3>Push to Deploy</h3>
-              <p class="text-secondary">It is a long established fact that a reader will be distracted by the readable
-                content of a page at its layout.
-              </p>
-            </div>
-          </div>
-          <!-- Fifth Card End -->
-
-          <!-- Sixth Card Start -->
-          <div class="col-lg-4">
-            <div class="feature-card">
-              <div class="card-icon">
-                <i class="ri-upload-cloud-2-line"></i>
-              </div>
-              <h3>Push to Deploy</h3>
-              <p class="text-secondary">It is a long established fact that a reader will be distracted by the readable
-                content of a page at its layout.</p>
-            </div>
-          </div>
-          <!-- Sixth Card End -->
         </div>
       </div>
 
-
+      <div class="row justify-content-center g-4 mt-4">
+        <!-- The grid classes are used to make the cards responsive -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="feature-card">
+            <div class="card-icon">
+              <i class="ri-upload-cloud-2-line"></i>
+            </div>
+            <h3>Push to Deploy</h3>
+            <p class="text-secondary">Deploying your application is as simple as a git push. We handle the rest, getting your code live in minutes.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="feature-card">
+            <div class="card-icon">
+              <i class="ri-lock-2-line"></i>
+            </div>
+            <h3>SSL Certificates</h3>
+            <p class="text-secondary">Ensure your data is secure with free SSL certificates, providing encrypted connections for all your users.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="feature-card">
+            <div class="card-icon">
+              <i class="ri-loop-left-line"></i>
+            </div>
+            <h3>Simple Queues</h3>
+            <p class="text-secondary">Manage background jobs and asynchronous tasks with ease using our simple and powerful queueing system.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="feature-card">
+              <div class="card-icon">
+                <i class="ri-shield-line"></i>
+              </div>
+              <h3>Advanced Security</h3>
+              <p class="text-secondary">Protect your application from threats with our advanced security features, including firewalls and DDoS mitigation.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="feature-card">
+              <div class="card-icon">
+                <i class="ri-settings-4-line"></i>
+              </div>
+              <h3>Powerful API</h3>
+              <p class="text-secondary">Integrate with your existing tools and build custom solutions with our flexible and powerful API.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="feature-card">
+              <div class="card-icon">
+                <i class="ri-database-2-line"></i>
+              </div>
+              <h3>Database Backups</h3>
+              <p class="text-secondary">Never worry about data loss. We provide automatic, regular backups of your database to keep your information safe.</p>
+            </div>
+          </div>
+      </div>
     </div>
   </section>
 
   <section id="achievements">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <div class="achievements-content d-flex flex-column justify-content-center align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-12 text-center">
+          <div class="achievements-content">
             <h2>Trusted by developers from over 80 planets</h2>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+            <p class="px-3">There are many variations of passages of Lorem Ipsum available, but the majority.</p>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center text-center">
         <div class="col-lg-8 col-md-12">
-          <div class="row figures">
-            <div class="col-lg-4 col-md-4 col-12">
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
               <div class="satisfaction">
                 <h3>100%</h3>
                 <p>Satisfaction</p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-12">
+            <div class="col-md-4 col-sm-12">
               <div class="happyusers">
                 <h3>120K</h3>
                 <p>Happy Users</p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-12">
+            <div class="col-md-4 col-sm-12">
               <div class="downloads">
                 <h3>125k+</h3>
                 <p>Downloads</p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
-    </div>
     </div>
   </section>
 
   <section class="pricing">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-12 text-center">
           <div class="section-title">
             <h3 class="text-uppercase mb-2">Pricing</h3>
             <h2>Pricing Plan</h2>
@@ -219,9 +200,9 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100">
             <div class="pricing-card-head d-flex flex-column gap-4">
               <h3 class="fs-5 m-0 fs-6">Hobby</h3>
               <p class="text-secondary m-0">All the basics for starting a new business</p>
@@ -241,95 +222,91 @@
                 <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Potenti felis, in cras ligula.</li>
               </ul>
             </div>
-
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card">
-            <div class="pricing-card-head d-flex flex-column gap-4">
-              <h3 class="fs-5 m-0 fs-6">Freelancer</h3>
-              <p class="text-secondary m-0">All the basics for starting a new business</p>
-              <div class="d-flex align-items-end gap-1 mb-1">
-                <h2 class="fw-bold m-0">$24</h2>
-                <h4 class="mb-1 text-secondary">/mo</h4>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card h-100">
+                <div class="pricing-card-head d-flex flex-column gap-4">
+                  <h3 class="fs-5 m-0 fs-6">Freelancer</h3>
+                  <p class="text-secondary m-0">All the basics for starting a new business</p>
+                  <div class="d-flex align-items-end gap-1 mb-1">
+                    <h2 class="fw-bold m-0">$24</h2>
+                    <h4 class="mb-1 text-secondary">/mo</h4>
+                  </div>
+                  <button class="btn btn-primary">Buy Freelancer</button>
+                </div>
+                <hr class="m-0">
+                <div class="pricing-card-footer">
+                  <h4>What's Included</h4>
+                  <ul class="list-unstyled d-flex flex-column gap-2 m-0">
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Cras justo odio.</li>
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Dapibus ac facilisis in.</li>
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Morbi leo risus.</li>
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Potenti felis, in cras ligula.</li>
+                  </ul>
+                </div>
+    
               </div>
-              <button class="btn btn-primary">Buy Freelancer</button>
-            </div>
-            <hr class="m-0">
-            <div class="pricing-card-footer">
-              <h4>What's Included</h4>
-              <ul class="list-unstyled d-flex flex-column gap-2 m-0">
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Cras justo odio.</li>
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Dapibus ac facilisis in.</li>
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Morbi leo risus.</li>
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Potenti felis, in cras ligula.</li>
-              </ul>
-            </div>
-
-          </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card">
-            <div class="pricing-card-head d-flex flex-column gap-4">
-              <h3 class="fs-5 m-0 fs-6">Startup</h3>
-              <p class="text-secondary m-0">All the basics for starting a new business</p>
-              <div class="d-flex align-items-end gap-1 mb-1">
-                <h2 class="fw-bold m-0">$32</h2>
-                <h4 class="mb-1 text-secondary">/mo</h4>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card h-100">
+                <div class="pricing-card-head d-flex flex-column gap-4">
+                  <h3 class="fs-5 m-0 fs-6">Startup</h3>
+                  <p class="text-secondary m-0">All the basics for starting a new business</p>
+                  <div class="d-flex align-items-end gap-1 mb-1">
+                    <h2 class="fw-bold m-0">$32</h2>
+                    <h4 class="mb-1 text-secondary">/mo</h4>
+                  </div>
+                  <button class="btn btn-primary">Buy Startup</button>
+                </div>
+                <hr class="m-0">
+                <div class="pricing-card-footer">
+                  <h4>What's Included</h4>
+                  <ul class="list-unstyled d-flex flex-column gap-2 m-0">
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Cras justo odio.</li>
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Dapibus ac facilisis in.</li>
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Morbi leo risus.</li>
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Potenti felis, in cras ligula.</li>
+                  </ul>
+                </div>
+    
               </div>
-              <button class="btn btn-primary">Buy Startup</button>
-            </div>
-            <hr class="m-0">
-            <div class="pricing-card-footer">
-              <h4>What's Included</h4>
-              <ul class="list-unstyled d-flex flex-column gap-2 m-0">
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Cras justo odio.</li>
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Dapibus ac facilisis in.</li>
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Morbi leo risus.</li>
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Potenti felis, in cras ligula.</li>
-              </ul>
-            </div>
-
-          </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card">
-            <div class="pricing-card-head d-flex flex-column gap-4">
-              <h3 class="fs-5 m-0 fs-6">Enterprise</h3>
-              <p class="text-secondary m-0">All the basics for starting a new business</p>
-              <div class="d-flex align-items-end gap-1 mb-1">
-                <h2 class="fw-bold m-0">$48</h2>
-                <h4 class="mb-1 text-secondary">/mo</h4>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card h-100">
+                <div class="pricing-card-head d-flex flex-column gap-4">
+                  <h3 class="fs-5 m-0 fs-6">Enterprise</h3>
+                  <p class="text-secondary m-0">All the basics for starting a new business</p>
+                  <div class="d-flex align-items-end gap-1 mb-1">
+                    <h2 class="fw-bold m-0">$48</h2>
+                    <h4 class="mb-1 text-secondary">/mo</h4>
+                  </div>
+                  <button class="btn btn-primary">Buy Enterprise</button>
+                </div>
+                <hr class="m-0">
+                <div class="pricing-card-footer">
+                  <h4>What's Included</h4>
+                  <ul class="list-unstyled d-flex flex-column gap-2 m-0">
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Cras justo odio.</li>
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Dapibus ac facilisis in.</li>
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Morbi leo risus.</li>
+                    <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Potenti felis, in cras ligula.</li>
+                  </ul>
+                </div>
               </div>
-              <button class="btn btn-primary">Buy Enterprise</button>
-            </div>
-            <hr class="m-0">
-            <div class="pricing-card-footer">
-              <h4>What's Included</h4>
-              <ul class="list-unstyled d-flex flex-column gap-2 m-0">
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Cras justo odio.</li>
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Dapibus ac facilisis in.</li>
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Morbi leo risus.</li>
-                <li class="text-secondary"><i class="ri-checkbox-circle-line"></i> Potenti felis, in cras ligula.</li>
-              </ul>
-            </div>
-
-          </div>
         </div>
       </div>
     </div>
-
   </section>
 
   <section id="purchase">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-12 col-12 text-center">
           <div class="purchase-content">
-            <h2>You are using free Lite
-              Version of Appvilla</h2>
+            <h2>You are using free Lite Version of Appvilla</h2>
             <p>Please, purchase full version of the template to get all pages, features and commercial license.</p>
-            <button>Purchase Now</button>
+            <button class="btn">Purchase Now</button>
           </div>
         </div>
       </div>
@@ -338,11 +315,11 @@
 
   <section id="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="credits">
-            <img src="./images/footer-logo.svg" alt="footer-logo-white">
-            <p>Making the world a better place through constructing elegant hierarchies.</p>
+      <div class="row gy-5">
+        <div class="col-lg-4 col-md-12">
+          <div class="credits d-flex flex-column gap-4">
+            <img src="./images/footer-logo.svg" alt="footer-logo-white" style="width: 11rem;">
+            <p class="m-0">Making the world a better place through constructing elegant hierarchies.</p>
             <div class="handles d-flex gap-3">
               <a href="#"><i class="ri-facebook-fill"></i></a>
               <a href="#"><i class="ri-twitter-fill"></i></a>
@@ -351,68 +328,92 @@
               <a href="#"><i class="ri-youtube-fill"></i></a>
               <a href="#"><i class="ri-pinterest-fill"></i></a>
             </div>
-            <div class="owner d-flex flex-column">
-              <p>Designed and Developed by <a href="#">Rana</a></p>
-              <p>Distributed by <a href="#">RaoSaab</a></p>
+            <div class="owner d-flex flex-column gap-0">
+              <p class="m-0">Designed and Developed by <a href="#">Rana</a>.</p>
+              <p class="m-0">Distributed by <a href="#">RaoSaab</a></p>
             </div>
           </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 col-md-12">
           <div class="row">
-            <div class="col-3">
-              <div class="links-1">
+            <div class="col-md-3 col-6">
+              <div class="links">
                 <h3>Solution</h3>
                 <ul class="list-unstyled">
-                  <li>Marketing</li>
-                  <li>Analytics</li>
-                  <li>Commerce</li>
-                  <li>Insights</li>
-                  <li>Promotion</li>
+                  <li><a href="#">Marketing</a></li>
+                  <li><a href="#">Analytics</a></li>
+                  <li><a href="#">Commerce</a></li>
+                  <li><a href="#">Insights</a></li>
+                  <li><a href="#">Promotion</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-3">
-              <div class="links-2">
+            <div class="col-md-3 col-6">
+              <div class="links">
                 <h3>Support</h3>
                 <ul class="list-unstyled">
-                  <li>Pricing</li>
-                  <li>Documentation</li>
-                  <li>Guides</li>
-                  <li>API Status</li>
-                  <li>Live Support</li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">Guides</a></li>
+                  <li><a href="#">API Status</a></li>
+                  <li><a href="#">Live Support</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-3">
-              <div class="links-3">
+            <div class="col-md-3 col-6">
+              <div class="links">
                 <h3>Company</h3>
                 <ul class="list-unstyled">
-                  <li>About Us</li>
-                  <li>Our Blog</li>
-                  <li>Jobs</li>
-                  <li>Press</li>
-                  <li>Contact Us</li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Our Blog</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Contact Us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-3">
-              <div class="links-4">
-                <h3>Legal</h3>
-                <ul class="list-unstyled">
-                  <li>Terms & Conditions</li>
-                  <li>Privacy Policy</li>
-                  <li>Catering Services</li>
-                  <li>Customer Relations</li>
-                  <li>Innovation</li>
-                </ul>
+            <div class="col-md-3 col-6">
+                <div class="links">
+                  <h3>Legal</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Catering Services</a></li>
+                    <li><a href="#">Customer Relations</a></li>
+                    <li><a href="#">Innovation</a></li>
+                  </ul>
+                </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
 
+  <div class="scrolltotop">
+    <a href="#top" class="scroll-btn">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+  </div>
+
+  <!-- Bootstrap's JavaScript is required for the navbar toggler and other components -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('nav').addClass('navbar-scrolled');
+        } else {
+          $('nav').removeClass('navbar-scrolled');
+        }
+      });
+    });
+
+
+
+
+  </script>
 </body>
 
 </html>

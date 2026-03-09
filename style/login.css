@@ -1,122 +1,137 @@
-/* --- Luxury Login Page Styles --- */
-
-.luxury-login-body {
-    background-color: #0f0f0f;
-    background-image: radial-gradient(circle at 50% 0%, #2a2a2a 0%, #0f0f0f 70%);
-    color: #e0e0e0;
-    min-height: 100vh;
+.appvilla-login-body {
+    background-color: #f9f9f9; 
+    color: #333;
 }
 
 .login-card {
-    background: rgba(30, 30, 30, 0.6);
-    backdrop-filter: blur(10px);
-    border: 1px solid #333;
+    background: #fff;
+    border: none;
     padding: 3rem;
     border-radius: 15px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.luxury-brand {
+.appvilla-brand {
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2rem;
-    color: #fff;
+    color: #333;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
 }
 
-.luxury-subtitle {
-    color: #888;
+.appvilla-subtitle {
+    color: #555;
     font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
-.luxury-label {
-    color: #ccc;
+.appvilla-label {
+    color: #555;
     font-size: 0.85rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
-.luxury-input-group .input-group-text {
-    background-color: #1a1a1a;
-    border: 1px solid #444;
+.appvilla-input-group .input-group-text {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
     border-right: none;
-    color: #FF6B81; /* Brand Color */
+    color: #FF6B81;
 }
 
-.luxury-input {
-    background-color: #1a1a1a;
-    border: 1px solid #444;
-    border-left: none;
-    color: #fff;
+.appvilla-input {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
     padding: 10px;
 }
 
-.luxury-input:focus {
-    background-color: #1a1a1a;
+.appvilla-input:focus {
+    background-color: #fff;
     border-color: #FF6B81;
-    color: #fff;
+    color: #333;
     box-shadow: none;
 }
 
-.luxury-input::placeholder {
-    color: #555;
+.appvilla-input::placeholder {
+    color: #aaa;
 }
 
-.luxury-input-group:focus-within .input-group-text {
+.appvilla-input-group:focus-within .input-group-text {
     border-color: #FF6B81;
 }
 
-.luxury-check:checked {
+.appvilla-check:checked {
     background-color: #FF6B81;
     border-color: #FF6B81;
 }
 
-.luxury-link, .luxury-link-bold {
+.appvilla-link, .appvilla-link-bold {
     color: #FF6B81;
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s;
 }
 
-.luxury-link-bold {
+.appvilla-link-bold {
     font-weight: 600;
 }
 
-.luxury-link:hover, .luxury-link-bold:hover {
-    color: #fff;
+.appvilla-link:hover, .appvilla-link-bold:hover {
+    color: #333;
 }
 
-.btn-luxury {
-    background: linear-gradient(45deg, #FF6B81, #ff4757);
+.btn-appvilla {
+    background: #FF6B81;
     color: #fff;
     font-weight: 600;
     border: none;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: all 0.3s ease;
 }
 
-.btn-luxury:hover {
-    background: linear-gradient(45deg, #ff8596, #FF6B81);
+.btn-appvilla:hover {
+    background: #e65268;
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 107, 129, 0.3);
 }
 
-.luxury-text-muted {
+.text-muted {
     color: #666;
     font-size: 0.9rem;
 }
 
-.luxury-back-link {
+.appvilla-back-link {
     display: inline-block;
     margin-top: 15px;
-    color: #666;
+    color: #777;
     text-decoration: none;
     font-size: 0.85rem;
     transition: color 0.3s;
 }
 
-.luxury-back-link:hover {
-    color: #fff;
+.appvilla-back-link:hover {
+    transform: translateX(-2px);
+    color: #FF6B81;
+}
+
+.social-login-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-login-buttons a {
+    text-decoration: none;
+}
+
+.social-icon i {
+    font-size: 1.5rem;
+    color: rgb(8, 24, 40);
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover i {
+    color: #FF6B81;
 }
