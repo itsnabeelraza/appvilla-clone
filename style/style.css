@@ -2,29 +2,12 @@
 
 * {
     font-family: 'Inter', sans-serif;
-    scroll-behavior: smooth;
-}
-body {
-    position: relative;
 }
 
 #hero {
     background-color: #FF6B81;
     color: white;
     min-height: 100vh;
-}
-
-.navbar-scrolled {
-    background-color: #fff !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-scrolled .navbar-brand img {
-    content: url('./images/logo.svg');
-}
-
-.navbar-scrolled .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-nav {
@@ -97,7 +80,6 @@ body {
     stroke: #FF6B81;
     stroke-width: 1;
     fill: none;
-
     width: 25px;
     height: auto;
     transition: all 0.3s ease;
@@ -122,7 +104,6 @@ body {
     stroke: white;
     stroke-width: 1;
     fill: none;
-
     width: 25px;
     height: auto;
     transition: all 0.3s ease;
@@ -331,7 +312,7 @@ body {
 
 .purchase-content .btn:hover {
     background-color: black;
-    color:white;
+    color: white;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -360,6 +341,7 @@ body {
 .handles a:hover {
     color: #FF6B81;
 
+}
 
 .owner p a {
     text-decoration: none;
@@ -405,6 +387,9 @@ body {
     color: #FF6B81;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 .scrolltotop {
     position: fixed;
@@ -432,63 +417,4 @@ body {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
-}
-
-/* media queries */
-@media (max-width: 992px) {
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .hero-content {
-        text-align: center;
-        align-items: center !important;
-    }
-
-    .hero-heading {
-        font-size: 2.5rem;
-        line-height: 3rem;
-        text-align: center;
-    }
-
-    .hero-content p {
-        text-align: center;
-    }
-
-    .ctr {
-        flex-direction: column;
-        align-items: center !important;
-    }
-
-    .hero-img {
-        text-align: center;
-    }
-
-    .achievements-content {
-        text-align: center;
-    }
-
-    .achievements-content h2 {
-        font-size: 1.75rem;
-    }
-
-    .purchase-content {
-        text-align: center;
-    }
-
-    .purchase-content h2 {
-        font-size: 1.75rem;
-    }
-}
-
-@media (max-width: 768px) {
-    #footer .row {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .links {
-        align-items: center;
-    }
-}
 }
