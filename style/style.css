@@ -14,6 +14,32 @@
     gap: 25px;
 }
 
+
+.navbar {
+    transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-scrolled {
+    background-color: white !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-scrolled .nav-link {
+    color: #333 !important;
+}
+
+.navbar-scrolled .nav-link:hover {
+    color: #FF6B81 !important;
+}
+
+.navbar-scrolled .navbar-brand img {
+    filter: invert(57%) sepia(13%) saturate(3000%) hue-rotate(305deg) brightness(101%) contrast(101%);
+}
+
+.navbar-scrolled .navbar-toggler-icon {
+    filter: invert(1) !important;
+}
+
 .login-btn:hover {
     color: #FF6B81;
     background-color: white;
@@ -30,6 +56,18 @@
     border-color: rgb(8, 24, 40);
     
 }
+
+.navbar-scrolled .login-btn {
+    color: #333;
+    border-color: #333;
+}
+
+.navbar-scrolled .login-btn:hover {
+    background-color: #FF6B81;
+    color: white;
+    border-color: #FF6B81;
+}
+
 
 .get-started {
     padding: 12px 30px !important;
@@ -417,4 +455,76 @@ html {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+}
+
+/* Mobile Optimization */
+@media (max-width: 991px) {
+    .hero-content {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .hero-heading {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .ctr {
+        justify-content: center !important;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ctr button {
+        justify-content: center;
+    }
+
+    .hero-img {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .credits {
+        align-items: center;
+    }
+
+    .credits p {
+        text-align: center;
+    }
+
+    .links {
+        flex-direction: column;
+        padding-top: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links h3 {
+        text-align: center;
+    }
+
+    .links ul {
+        align-items: center;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .navbar-nav .nav-link {
+        color: #333 !important;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .nav-btn {
+        justify-content: center;
+    }
 }
